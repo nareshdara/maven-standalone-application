@@ -51,6 +51,20 @@
 	</issueManagement>
 
 	-->
+	
+	<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>mavenrelease</name>
+	      <url>http://ec2-13-232-117-89.ap-south-1.compute.amazonaws.com:8081/repository/test_maven_release/</url>
+	    </repository>
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>mavensnapshot </name>
+	      <url>http://ec2-13-232-117-89.ap-south-1.compute.amazonaws.com:8081/repository/test_maven_snapshot/</url>
+	    </snapshotRepository>
+	</distributionManagement>
+	
 	<build>
 	  <plugins>
 	    <plugin>
